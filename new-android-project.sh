@@ -15,13 +15,13 @@ echo "New Android Project"
 echo -e "Directory: $1\n"
 
 # gather info about the project
-echo "Project name ? [$1]"
+echo "Project name? [$1]"
 read name
 if [ -z $name ]; then
     name=$1
 fi
 
-echo "Company name ? [empty]"
+echo "Company name? [empty]"
 read company
 com="com"
 if [ -z $company ]; then
@@ -30,7 +30,7 @@ else
     defaultpackage=$com.$company.$name
 fi
 
-echo "Package name ? [$defaultpackage]"
+echo "Package name? [$defaultpackage]"
 read package
 if [ -z $package ]; then
     package=$defaultpackage
